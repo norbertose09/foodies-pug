@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!-- <link rel="shortcut icon" href="./assets/img/favicon.ico" /> -->
+    <link rel="stylesheet" href="dist/output.css">
+
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <title>Home | Foodies-Pug</title>
+  </head>
+  <body class="text-gray-800 antialiased font-body">
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+            href="/Landing Page/html-landing-page/landing.html"
+            >Foodies-Pug</a
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar"
+        >
+          <!-- <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
+                ></i>
+                Docs</a
+              >
+            </li>
+          </ul> -->
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+         
+            <li class="flex items-center">
+              <a href="#menu"
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+                >
+                <!-- <i
+                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
+                ></i
+                > -->
+                <span class="inline-block ml-2">Our Menu</span></a
+              >
+            </li>
+             <li class="flex items-center">
+              <a href="#order"
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+                >
+                <!-- <i
+                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
+                ></i
+                > -->
+                <span class="inline-block ml-2">Place an Order</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a href="#book"
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+                >
+              
+                <span class="inline-block ml-2">Book for an Event</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a href="#about"
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+                >
+                <!-- <i
+                  class="lg:text-gray-300 text-gray-500 fab fa-instagram text-lg leading-lg "
+                ></i
+                > -->
+                <span class="inline-block ml-2">About Us</span></a
+              >
+            </li>
+          
+            <!-- <li class="flex items-center">
+              <button
+                class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                type="button"
+                style="transition: all 0.15s ease 0s;"
+              >
+                <i class="fas fa-arrow-alt-circle-down"></i> Download
+              </button>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 75vh;"
+      >
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style='background-image: url("https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");'
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-75 bg-black"
+          ></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="pt-12">
+                <h1 class="text-white font-semibold text-5xl">
+                  Let your daily meal be our priority.
+                </h1>
+                <p class="mt-4 text-lg text-gray-300">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit totam, beatae voluptates obcaecati itaque atque possimus accusamus assumenda eveniet?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-white fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+      <section class="pb-20 bg-white -mt-24">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center md:mx-auto">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+                  >
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h6 id="about" class="text-xl font-semibold uppercase">about us</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vel, placeat a deserunt obcaecati nisi quis?
+                  </p>
+                </div>
+              </div>
+            </div>
+           
+          <div class="flex flex-wrap items-center mt-20">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <!-- <div
+                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
+              >
+                <i class="fas fa-user-friends text-xl"></i>
+              </div> -->
+              <h3 id="book" class="text-3xl mb-2 text-gray-700 font-bold leading-normal uppercase text-center">
+                we've got you covered
+              </h3>
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700 text-justify"
+              >
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit alias ex iste distinctio at voluptatibus mollitia, accusamus cumque commodi enim, vel, odit facere ullam hic beatae! Vero facilis impedit, harum aliquam, eum, iusto accusamus quos officia excepturi ut hic. Explicabo excepturi perspiciatis iste laboriosam ipsum deleniti, amet dolorem eum fuga.
+              </p>
+              <!-- <a
+                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+                class="font-bold text-gray-800 mt-8"
+                >Book for your Event Handling now</a -->
+              
+            </div>
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
+              >
+                <img
+                  alt="..."
+                  src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMGV2ZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  class="w-full align-middle rounded-t-lg"
+                />
+                <blockquote class="relative p-8 mb-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px;"
+                  >
+                    <polygon
+                      points="-30,95 583,95 583,65"
+                      class="text-pink-600 fill-current"
+                    ></polygon>
+                  </svg>
+                  <h4 class="text-xl font-bold text-white">
+                    Event Handling
+                  </h4>
+                  <p class="text-md font-light mt-2 text-white">
+                    At Foodies-pug we have all it takes to handle your bulk orders for small or large events giving you discounts along side.
+                  </p>
+                  <a href="#" class="underline text-white mt-14">Book Now</a>
+
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-26" id="menu">
+        <div class="container mx-auto px-12">
+          <h2 class="text-4xl text-gray-700 font-bold uppercase mb-8 text-center">our menu</h2>
+          <div class="flex flex-col md:flex-row gap-10">
+
+            <div class="shadow-lg rounded-lg mx-auto overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1577859714523-5f0b6c98ece7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3BhZ2hldHRpJTIwYW5kJTIwYmVlZnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="w-full">
+              <h1 class="text-xl font-b mb-3 mt-3 text-center text-gray-700 font-bold">Spaghetti and Beef Stew</h1>
+              <p class="text-gray-700 font-semibold text-center px-3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, necessitatibus.</p>
+            </div>
+
+            <div class="shadow-lg text-gray-500 rounded-lg mx-auto overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1569723650490-5d19d91749a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHJpY2UlMjBhbmQlMjBzdGV3fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="w-full overflow-hidden">
+              <h1 class="text-xl font-b mb-3 mt-3 text-center text-gray-700 font-bold">Rice and Stew</h1>
+              <p class="text-gray-700 font-semibold text-center px-3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, necessitatibus.</p>
+            </div>
+
+            <div class="shadow-lg text-gray-500 rounded-lg mx-auto overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1664334997177-6ae654a62735?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJpY2UlMjBhbmQlMjBzdGV3fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="w-full overflow-hidden">
+              <h1 class="text-xl font-b mb-3 mt-3 text-center text-gray-700 font-bold">Basmati Rice and Turkey</h1>
+              <p class="text-gray-700 font-semibold text-center px-3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, necessitatibus.</p>
+            </div>
+
+            <div class="shadow-lg text-gray-500 rounded-lg mx-auto overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1642783944285-b33b18ef6c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2hhd2FybWF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="w-full overflow-hidden">
+              <h1 class="text-xl font-b mb-3 mt-3 text-center text-gray-700 font-bold">Sharwama</h1>
+              <p class="text-gray-700 font-semibold text-center px-3 pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, necessitatibus.</p>
+            </div>
+
+            <div class="shadow-lg text-gray-500 rounded-lg mx-auto overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1577193459085-2da60ca7fd77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZpc2glMjBiYXJiZWN1ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="w-full overflow-hidden">
+              <h1 class="text-xl font-b mb-3 mt-3 text-center text-gray-700 font-bold">Fish BBQ</h1>
+              <p class="text-gray-700 font-semibold text-center px-3 pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, necessitatibus.</p>
+            </div>
+      
+            
+          </div>
+        </div>
+      </section>
+      
+      <section class="relative py-20">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-white fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <!-- <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+              <img
+                alt="..."
+                class="max-w-full rounded-lg shadow-lg"
+                src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
+              />
+            </div> -->
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+              <div class="md:pr-12">
+                <div
+                  class="mt-6 text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
+                >
+                  <i class="fas fa-rocket text-xl"></i>
+                </div>
+                <h3 id="order" class="text-4xl font-semibold uppercase text-gray-700 mb-5">order now</h3>
+                <p class="text-gray-500 mb-5">Select what you want, enter your email, mobile number and address and get it delivered to you</p>
+             
+                <input type="text" placeholder="Enter Email" class="rounded-lg mb-5">
+              <input type="number" placeholder="Enter Mobile No" class="rounded-lg mb-5"><br>
+              <textarea name="" id="" cols="24" rows="3" class="rounded-lg mb-5 text-gray-500">Enter your exact address correctly</textarea>
+          
+              
+
+                <div class="overflow-auto rounded-lg shadow-lg shadow-sky-100 mb-7">
+                  <table class="w-full mt-4">
+                     
+              
+                      <tbody class="divide-y divide-gray-100">
+                  <tr class="hover:bg-gray-200">
+                    <td class="p-3 text-sm text-gray-700 whitespace-nowrap font-bold">Spaghetti and Beef Stew</td>
+                    <td><input type="checkbox" class="mr-5 ml-3"></td>
+                    </tr>
+                    <tr class="hover:bg-gray-200">
+                  <td class="p-3 text-sm text-gray-700 whitespace-nowrap font-bold">Rice and stew</td>
+                  <td><input type="checkbox" class="mr-5 ml-3"></td>
+
+                  </tr>
+                  <tr class="hover:bg-gray-200">
+                  <td class="p-3 text-sm text-gray-700 whitespace-nowrap font-bold">Basmati Rice and Turkey</td>
+                  <td><input type="checkbox" class="mr-5 ml-3"></td>
+
+                  </tr>
+                  <tr class="hover:bg-gray-200">
+                    <td class="p-3 text-sm text-gray-700 whitespace-nowrap font-bold">Sharwarma</td>
+                    <td><input type="checkbox" class="mr-5 ml-3"></td>
+
+                    </tr>
+                    <tr class="hover:bg-gray-200">
+                      <td class="p-3 text-sm text-gray-700 whitespace-nowrap font-bold">Fish BBQ</td>
+                    <td><input type="checkbox" class="mr-5 ml-3"></td>
+
+                      </tr>
+
+              
+              </tbody>
+    
+                  </table>
+              </div>
+             
+             <button class="uppercase px-3 py-2 text-white bg-blue-500 rounded-lg shadow-md">order now</button>
+              
+
+
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+
+     
+    </main>
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              Find us on any of these platforms, we respond ASAP.
+            </h5>
+            <div class="my-6 ">
+              <button
+                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-twitter"></i></button
+              ><button
+                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-facebook-square"></i></button
+              ><button
+                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-instagram"></i></button
+              ><button
+                class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-whatsapp"></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Useful Links</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://www.creative-tim.com/presentation"
+                      >About Us</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://blog.creative-tim.com"
+                      >Blog</a
+                    >
+                  </li> -->
+                  <!-- <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://www.github.com/creativetimofficial"
+                      >Github</a
+                    >
+                  </li> -->
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://www.creative-tim.com/bootstrap-themes/free"
+                      >Food Vouchers</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Other Resources</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
+                      >License and Company Registration</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/terms"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/privacy"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/contact-us"
+                      >Contact Us</a
+                    >
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-400" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              Copyright © 2022 Foodies-Pug<br> All Rights Reserved.
+              <!-- <a
+                href="https://www.creative-tim.com"
+                class="text-gray-600 hover:text-gray-900"
+                >Creative Tim</a
+              >. -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="//code.tidio.co/bspdtlkrabujzkyeeas7eq5efgl5txt4.js" async></script>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+</html>
