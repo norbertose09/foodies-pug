@@ -553,10 +553,6 @@ video {
   pointer-events: none;
 }
 
-.fixed{
-  position: fixed;
-}
-
 .absolute{
   position: absolute;
 }
@@ -596,11 +592,6 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .my-6{
@@ -660,8 +651,8 @@ video {
   margin-bottom: 1rem;
 }
 
-.mt-32{
-  margin-top: 8rem;
+.mt-20{
+  margin-top: 5rem;
 }
 
 .mb-6{
@@ -692,8 +683,8 @@ video {
   margin-top: 1.5rem;
 }
 
-.mb-24{
-  margin-bottom: 6rem;
+.mb-7{
+  margin-bottom: 1.75rem;
 }
 
 .mr-5{
@@ -702,30 +693,6 @@ video {
 
 .mt-0{
   margin-top: 0px;
-}
-
-.mt-28{
-  margin-top: 7rem;
-}
-
-.mt-24{
-  margin-top: 6rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
-}
-
-.mb-16{
-  margin-bottom: 4rem;
-}
-
-.mb-12{
-  margin-bottom: 3rem;
-}
-
-.mb-7{
-  margin-bottom: 1.75rem;
 }
 
 .block{
@@ -780,12 +747,12 @@ video {
   width: 4rem;
 }
 
-.w-32{
-  width: 8rem;
-}
-
 .w-10{
   width: 2.5rem;
+}
+
+.w-5{
+  width: 1.25rem;
 }
 
 .min-w-0{
@@ -802,10 +769,6 @@ video {
 
 .flex-grow{
   flex-grow: 1;
-}
-
-.table-auto{
-  table-layout: auto;
 }
 
 .cursor-pointer{
@@ -842,12 +805,6 @@ video {
 
 .gap-10{
   gap: 2.5rem;
-}
-
-.space-y-12 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]){
@@ -900,6 +857,10 @@ video {
 
 .border-solid{
   border-style: solid;
+}
+
+.border-none{
+  border-style: none;
 }
 
 .border-transparent{
@@ -975,10 +936,6 @@ video {
   padding: 2rem;
 }
 
-.p-12{
-  padding: 3rem;
-}
-
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1029,11 +986,6 @@ video {
   padding-bottom: 5rem;
 }
 
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .pt-16{
   padding-top: 4rem;
 }
@@ -1052,10 +1004,6 @@ video {
 
 .pt-6{
   padding-top: 1.5rem;
-}
-
-.pt-20{
-  padding-top: 5rem;
 }
 
 .pb-3{
@@ -1122,11 +1070,6 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-4xl{
@@ -1300,10 +1243,6 @@ video {
   .md\:mx-auto{
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .md\:ml-80{
-    margin-left: 20rem;
   }
 
   .md\:w-4\/12{
